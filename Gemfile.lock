@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    coderay (1.1.2)
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
     ethon (0.11.0)
@@ -17,7 +18,11 @@ GEM
       domain_name (~> 0.5)
     http-form_data (1.0.3)
     http_parser.rb (0.6.0)
+    method_source (0.9.0)
     pg (0.21.0)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
     public_suffix (3.0.1)
     redd (0.8.8)
       http (~> 2.2)
@@ -32,6 +37,7 @@ PLATFORMS
 
 DEPENDENCIES
   pg
+  pry
   redd
   typhoeus
 
