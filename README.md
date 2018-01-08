@@ -20,4 +20,26 @@ e.g. `ruby lib/scraper.rb ethereum top 200 false`
 
 The "interactive" flag lets you start a ruby prompt with the data available as instance variables (@posts, @output)
 
-### The script writes all this to "out.json"
+### Output
+
+The script writes all this to "out.json"
+
+the general format is 
+
+```
+[
+  { 
+    title: "post title",
+    url: "posturl.com",
+    ups: 3, 
+    downs: 4,
+    comments: [
+      {
+        body: "first comment",
+        ups: 3,
+        downs: 4, 
+        replies: []
+    ]
+]
+```
+
