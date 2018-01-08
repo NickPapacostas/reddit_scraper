@@ -7,17 +7,34 @@ This script uses [Redd](https://github.com/avinashbot/redd) to get posts from re
 - [Install ruby!](https://www.ruby-lang.org/en/documentation/installation/)
 - Install Bundler: `gem install bundler`
 - clone the repo, install dependencies:
-  `git clone github.com/nickPapacostas/reddit_scraper` \br
-  `cd reddit_scraper` \br
+  
+
+  `git clone github.com/nickPapacostas/reddit_scraper` 
+  
+
+  `cd reddit_scraper` 
+  
+
   `bundle install`
-- add the secr3ts to your environment: REDDIT_CLIENT_ID, REDDIT_SECRET, REDDIT_UNAME, REDDIT_PASS
+
+- add the secr3ts to your environment: 
+
+`REDDIT_CLIENT_ID`
+
+`REDDIT_SECRET`
+
+`REDDIT_UNAME`
+
+`REDDIT_PASS`
 
 ## running
 
 The script takes 4 optional params: subreddit, listing (hot, new, top), limit (the number of posts to get), and interactive (true|false)
 
-e.g. `ruby lib/scraper.rb ethereum top 200 false`
+e.g. `ruby lib/scraper.rb ethereum top 80 false`
 
 The "interactive" flag lets you start a ruby prompt with the data available as instance variables (@posts, @output)
+
+!! right now "limit" can only go up to 100 (~.~) !!
 
 ### The script writes all this to "out.json"
