@@ -37,4 +37,25 @@ The "interactive" flag lets you start a ruby prompt with the data available as i
 
 !! right now "limit" can only go up to 100 (~.~) !!
 
-### The script writes all this to "out.json"
+### Output
+
+The script writes all this to "out.json"
+
+the general format is 
+
+```
+[
+  { 
+    title: "post title",
+    url: "posturl.com",
+    ups: 3, 
+    downs: 4,
+    comments: [
+      {
+        body: "first comment",
+        ups: 3,
+        downs: 4, 
+        replies: []
+    ]
+]
+```
